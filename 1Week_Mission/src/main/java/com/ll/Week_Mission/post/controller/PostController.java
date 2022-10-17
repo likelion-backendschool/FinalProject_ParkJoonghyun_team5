@@ -1,5 +1,6 @@
 package com.ll.Week_Mission.post.controller;
 
+import com.ll.Week_Mission.post.entity.Post;
 import com.ll.Week_Mission.post.form.PostForm;
 import com.ll.Week_Mission.post.service.PostService;
 import lombok.RequiredArgsConstructor;
@@ -9,6 +10,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
@@ -23,6 +26,7 @@ public class PostController {
 
     @GetMapping("/post/list")
     public String listPost(){
+        List<Post> postList = postService.getList();
         return "list";
     }
 

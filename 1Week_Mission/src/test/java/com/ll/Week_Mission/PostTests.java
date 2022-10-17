@@ -14,6 +14,7 @@ import org.springframework.test.web.servlet.RequestBuilder;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
@@ -49,5 +50,12 @@ public class PostTests {
         postForm.setSubject("hello");
 
         postService.create(postForm);
+    }
+
+    @DisplayName("글 리스트 확인")
+    @Test
+    public void postListTest() throws Exception{
+        List<Post> postList = postService.getList();
+        assertThat(postList.size()).isEqualTo(1);
     }
 }

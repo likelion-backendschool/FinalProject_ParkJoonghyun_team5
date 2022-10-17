@@ -9,6 +9,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Service
 @RequiredArgsConstructor
@@ -25,6 +26,12 @@ public class PostServiceImpl implements PostService{
         post.setUpdateDate(LocalDateTime.now());
         post.setAuthorId(2l);
         postRepository.save(post);
+    }
+
+    @Override
+    public List<Post> getList(){
+        List<Post> postList = postRepository.findAll();
+        return postList;
     }
 
 }
