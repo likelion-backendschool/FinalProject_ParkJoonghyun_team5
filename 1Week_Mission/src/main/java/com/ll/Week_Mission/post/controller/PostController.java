@@ -1,8 +1,10 @@
 package com.ll.Week_Mission.post.controller;
 
+import com.ll.Week_Mission.post.form.PostForm;
 import com.ll.Week_Mission.post.service.PostService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -25,9 +27,15 @@ public class PostController {
     }
 
     @GetMapping("/post/write")
+    public String getPostForm(){
+        return "getPostForm";
+    }
+
+    @PostMapping("/post/write")
     public String writePost(){
-        postService.create();
-        return "write";
+        PostForm postForm = new PostForm();
+        postService.create(postForm);
+        return "writePost";
     }
 
     @GetMapping("/post/{id}")
