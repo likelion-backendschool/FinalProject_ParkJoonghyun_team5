@@ -62,7 +62,14 @@
     &quot;spring.configuration.checksum&quot;: &quot;8de43c687abce19d964fe025e0ec01af&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.Application">
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="1Week_Mission.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ll.Week_Mission.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WeekMissionApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="week_mission.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ll.week_mission.WeekMissionApplication" />
