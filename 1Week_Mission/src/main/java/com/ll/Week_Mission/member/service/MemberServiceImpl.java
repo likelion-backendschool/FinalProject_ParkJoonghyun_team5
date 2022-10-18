@@ -5,6 +5,7 @@ import com.ll.Week_Mission.member.entity.Member;
 import com.ll.Week_Mission.member.exception.AlreadyJoinException;
 import com.ll.Week_Mission.member.form.JoinForm;
 import com.ll.Week_Mission.member.form.ModifyForm;
+import com.ll.Week_Mission.member.form.ModifyPasswordForm;
 import com.ll.Week_Mission.member.repository.MemberRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -59,6 +60,12 @@ public class MemberServiceImpl implements MemberService{
     public void modify(Member member, ModifyForm modifyForm){
         member.setEmail(modifyForm.getEmail());
         member.setNickname(modifyForm.getNickname());
+        memberRepository.save(member);
+    }
+
+    @Override
+    public void modifyPassword(Member member, ModifyPasswordForm modifyPasswordForm) {
+        member.setPassword(modifyPasswordForm.getPassword());
         memberRepository.save(member);
     }
 }

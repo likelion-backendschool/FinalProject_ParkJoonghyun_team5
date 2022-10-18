@@ -3,6 +3,7 @@ package com.ll.Week_Mission.member.controller;
 import com.ll.Week_Mission.member.entity.Member;
 import com.ll.Week_Mission.member.form.JoinForm;
 import com.ll.Week_Mission.member.form.ModifyForm;
+import com.ll.Week_Mission.member.form.ModifyPasswordForm;
 import com.ll.Week_Mission.member.service.MemberService;
 import com.ll.Week_Mission.security.MemberContext;
 import lombok.RequiredArgsConstructor;
@@ -49,6 +50,20 @@ public class MemberController {
         memberService.modify(member, modifyForm);
 
         return modifyForm.getNickname()+"으로 변경되었습니다."
+    }
+
+    @GetMapping("/modifyPassword")
+    public String modifyPasswordShow(){
+        return "modifyPassword"
+    }
+
+    @PostMapping("/modifyPassword")
+    public String modifyPassword(@AuthenticationPrincipal MemberContext memberContext, @Valid ModifyPasswordForm modifyPasswordForm){
+        Member member = memberService.getMemberById(memberContext.getId());
+
+        memberService.modifyPassword(member, modifyPasswordForm);
+
+        return modifyPasswordForm.getPassword()+"으로 변경되었습니다."
     }
 
 }
