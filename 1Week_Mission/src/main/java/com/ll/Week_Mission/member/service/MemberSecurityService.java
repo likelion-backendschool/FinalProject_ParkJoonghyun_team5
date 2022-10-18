@@ -2,6 +2,7 @@ package com.ll.Week_Mission.member.service;
 
 import com.ll.Week_Mission.member.entity.Member;
 import com.ll.Week_Mission.member.repository.MemberRepository;
+import com.ll.Week_Mission.security.MemberContext;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.User;
@@ -24,7 +25,6 @@ public class MemberSecurityService implements UserDetailsService {
 
         List<GrantedAuthority> authorities = new ArrayList<>();
 
-
-        return new User(member.getUsername(),member.getPassword(),authorities);
+        return new MemberContext(member,authorities);
     }
 }

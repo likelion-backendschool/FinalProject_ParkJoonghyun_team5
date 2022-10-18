@@ -43,8 +43,10 @@ public class MemberController {
     }
 
     @PostMapping("/modify")
-    public String modifyMemberInfo(@Valid ModifyForm modifyForm){
-        memberService.modify(modifyForm);
+    public String modifyMemberInfo(@AuthenticationPrincipal MemberContext memberContext, @Valid ModifyForm modifyForm){
+        Member member = memberService.getMemberById(memberContext.getId());
+
+        memberService.modify(member, modifyForm);
 
         return modifyForm.getNickname()+"으로 변경되었습니다."
     }

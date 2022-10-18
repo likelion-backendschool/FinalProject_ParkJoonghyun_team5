@@ -12,7 +12,7 @@ public interface MemberService {
 
     public Member findByUsername(String username);
 
-    public void modify(ModifyForm modifyForm);
+    public void modify(Member member, ModifyForm modifyForm);
 
-    public Member getMemberId(Long id);
+    public Member getMemberById(Long id);
 }

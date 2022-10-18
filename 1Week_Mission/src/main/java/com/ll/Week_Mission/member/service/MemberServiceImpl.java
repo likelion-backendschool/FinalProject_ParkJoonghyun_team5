@@ -51,12 +51,14 @@ public class MemberServiceImpl implements MemberService{
     }
 
     @Override
-    public Member getMemberId(Long id){
+    public Member getMemberById(Long id){
         return this.memberRepository.findById(id).orElseThrow(() -> new DataNotFoundException("member not found"));
     }
 
     @Override
-    public void modify(ModifyForm modifyForm){
-
+    public void modify(Member member, ModifyForm modifyForm){
+        member.setEmail(modifyForm.getEmail());
+        member.setNickname(modifyForm.getNickname());
+        memberRepository.save(member);
     }
 }
