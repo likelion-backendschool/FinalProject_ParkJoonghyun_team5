@@ -1,16 +1,12 @@
 package com.ll.Week_Mission.member.controller;
 
-import com.ll.Week_Mission.member.entity.Member;
 import com.ll.Week_Mission.member.form.JoinForm;
 import com.ll.Week_Mission.member.service.MemberService;
-import com.ll.Week_Mission.post.entity.Post;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
-import java.time.LocalDateTime;
 
 @RestController
 @RequiredArgsConstructor
@@ -30,4 +26,12 @@ public class MemberController {
 
         return joinForm.getNickname()+"님 가입이 완료되었습니다.";
     }
+
+    @GetMapping("/login")
+    public String showLogin(HttpServletRequest request){
+
+        return "login";
+    }
+
+
 }
