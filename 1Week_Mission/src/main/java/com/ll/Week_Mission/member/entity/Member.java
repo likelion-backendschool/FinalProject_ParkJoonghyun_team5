@@ -1,9 +1,11 @@
 package com.ll.Week_Mission.member.entity;
 
 import lombok.*;
+import org.springframework.security.core.GrantedAuthority;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
 @Getter
@@ -33,5 +35,6 @@ public class Member {
 
     @Column
     private LocalDateTime updateDate;
+
 
 }

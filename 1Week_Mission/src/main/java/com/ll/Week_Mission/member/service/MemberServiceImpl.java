@@ -4,6 +4,7 @@ import com.ll.Week_Mission.DataNotFoundException;
 import com.ll.Week_Mission.member.entity.Member;
 import com.ll.Week_Mission.member.exception.AlreadyJoinException;
 import com.ll.Week_Mission.member.form.JoinForm;
+import com.ll.Week_Mission.member.form.ModifyForm;
 import com.ll.Week_Mission.member.repository.MemberRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -24,7 +25,7 @@ public class MemberServiceImpl implements MemberService{
     @Override
     public void join(JoinForm joinForm){
         if (memberRepository.existsByUsername(joinForm.getUsername())){
-            throw new AlreadyJoinException("user 아디디가 중복됩니다.");
+            throw new AlreadyJoinException("user 아이디가 중복됩니다.");
         }
         else if (memberRepository.existsByEmail(joinForm.getEmail())){
             throw new AlreadyJoinException("이메일이 중복됩니다.");
@@ -47,5 +48,15 @@ public class MemberServiceImpl implements MemberService{
     @Override
     public Member findByUsername(String username){
         return this.memberRepository.findByUsername(username).orElseThrow(() -> new DataNotFoundException("member not found"));
+    }
+
+    @Override
+    public Member getMemberId(Long id){
+        return this.memberRepository.findById(id).orElseThrow(() -> new DataNotFoundException("member not found"));
+    }
+
+    @Override
+    public void modify(ModifyForm modifyForm){
+
     }
 }

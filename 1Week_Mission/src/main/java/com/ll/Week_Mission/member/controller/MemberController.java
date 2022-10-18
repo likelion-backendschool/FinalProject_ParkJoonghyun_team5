@@ -1,8 +1,12 @@
 package com.ll.Week_Mission.member.controller;
 
+import com.ll.Week_Mission.member.entity.Member;
 import com.ll.Week_Mission.member.form.JoinForm;
+import com.ll.Week_Mission.member.form.ModifyForm;
 import com.ll.Week_Mission.member.service.MemberService;
+import com.ll.Week_Mission.security.MemberContext;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
@@ -33,5 +37,16 @@ public class MemberController {
         return "login";
     }
 
+    @GetMapping("/modify")
+    public String showModifyForm(){
+        return "modify";
+    }
+
+    @PostMapping("/modify")
+    public String modifyMemberInfo(@Valid ModifyForm modifyForm){
+        memberService.modify(modifyForm);
+
+        return modifyForm.getNickname()+"으로 변경되었습니다."
+    }
 
 }
