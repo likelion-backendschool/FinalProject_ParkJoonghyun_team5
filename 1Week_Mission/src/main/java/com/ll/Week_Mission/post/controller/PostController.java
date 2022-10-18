@@ -5,12 +5,14 @@ import com.ll.Week_Mission.post.form.PostForm;
 import com.ll.Week_Mission.post.service.PostService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @RestController
@@ -23,6 +25,7 @@ public class PostController {
     public String main(){
         return "main";
     }
+
 
     @GetMapping("/post/list")
     public String listPost(){
@@ -43,22 +46,23 @@ public class PostController {
     }
 
     @GetMapping("/post/{id}")
-    public String detailPost(@PathVariable int id){
+    public String detailPost(@PathVariable long id){
+        Post post = postService.getPost(id);
         return "detail";
     }
 
     @GetMapping("/post/{id}/modify")
-    public String modifyPostByGet(@PathVariable int id){
+    public String modifyPostByGet(@PathVariable long id){
         return "modify";
     }
 
     @PostMapping("/post/{id}/modify")
-    public String modifyPostByPost(@PathVariable int id){
+    public String modifyPostByPost(@PathVariable long id){
         return "modify";
     }
 
     @GetMapping("/post/{id}/delete")
-    public String deletePost(@PathVariable int id){
+    public String deletePost(@PathVariable long id){
         return "delete";
     }
 }

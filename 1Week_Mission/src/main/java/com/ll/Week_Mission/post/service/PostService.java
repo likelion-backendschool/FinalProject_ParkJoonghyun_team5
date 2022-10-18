@@ -10,7 +10,18 @@ import java.util.List;
 
 public interface PostService {
 
+    // 글 등록 서비스
     public void create(PostForm postForm);
 
+    // 글 리스트 가져오기 서비스
     public List<Post> getList();
+
+    // 아이디에 해당하는 글 가져오기 서비스
+    public Post getPost(long id);
+
+    // 글 수정 서비스
+    public void modifyPost(Post post, String content);
+
+    // 글 삭제 서비스
+    public void deletePost(Post post);
 }
