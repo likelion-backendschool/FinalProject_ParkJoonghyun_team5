@@ -35,7 +35,8 @@ public class SecurityConfig {
                         XFrameOptionsHeaderWriter.XFrameOptionsMode.SAMEORIGIN))
                 .and()
                 .formLogin()
-                .loginPage("/member/login")
+                .loginPage("/member/login") // Get 방식
+                .loginProcessingUrl("/member/login") // Post 방식
                 .defaultSuccessUrl("/")
                 .and()
                 .logout()

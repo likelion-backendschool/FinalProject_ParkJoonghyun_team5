@@ -2,6 +2,7 @@ package com.ll.Week_Mission.member.service;
 
 import com.ll.Week_Mission.member.entity.Member;
 import com.ll.Week_Mission.member.form.JoinForm;
+import com.ll.Week_Mission.member.form.LoginForm;
 import com.ll.Week_Mission.member.form.ModifyForm;
 import com.ll.Week_Mission.member.form.ModifyPasswordForm;
 import org.springframework.stereotype.Service;

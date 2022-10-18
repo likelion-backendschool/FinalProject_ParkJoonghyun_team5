@@ -4,6 +4,7 @@ import com.ll.Week_Mission.DataNotFoundException;
 import com.ll.Week_Mission.member.entity.Member;
 import com.ll.Week_Mission.member.exception.AlreadyJoinException;
 import com.ll.Week_Mission.member.form.JoinForm;
+import com.ll.Week_Mission.member.form.LoginForm;
 import com.ll.Week_Mission.member.form.ModifyForm;
 import com.ll.Week_Mission.member.form.ModifyPasswordForm;
 import com.ll.Week_Mission.member.repository.MemberRepository;
@@ -68,4 +69,5 @@ public class MemberServiceImpl implements MemberService{
         member.setPassword(modifyPasswordForm.getPassword());
         memberRepository.save(member);
     }
+
 }
