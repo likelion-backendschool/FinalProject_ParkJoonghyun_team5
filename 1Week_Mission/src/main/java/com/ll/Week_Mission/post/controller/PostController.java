@@ -5,8 +5,7 @@ import com.ll.Week_Mission.post.form.PostForm;
 import com.ll.Week_Mission.post.service.PostService;
 import com.ll.Week_Mission.security.MemberContext;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
+import org.springframework.http.HttpStatus;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
@@ -14,10 +13,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.server.ResponseStatusException;
 
 import javax.validation.Valid;
-import java.time.LocalDateTime;
 import java.util.List;
 
 @Controller
@@ -62,14 +60,30 @@ public class PostController {
 
     @PreAuthorize("isAuthenticated()")
     @GetMapping("/post/{id}/modify")
-    public String modifyPostByGet(@PathVariable long id){
-        return "modify";
+    public String showModify(@AuthenticationPrincipal MemberContext memberContext, @PathVariable long id, Model model){
+        Post post = postService.getAuthorArticleById(id);
+
+        if (memberContext.memberIsNot(post.getAuthor())){
+            throw new ResponseStatusException(HttpStatus.FORBIDDEN);
+        }
+
+        model.addAttribute("post",post);
+
+        return "post/modify";
     }
 
     @PreAuthorize("isAuthenticated()")
     @PostMapping("/post/{id}/modify")
-    public String modifyPostByPost(@PathVariable long id){
-        return "modify";
+    public String modifyPostByPost(@AuthenticationPrincipal MemberContext memberContext, @PathVariable long id, @Valid PostForm postForm){
+        Post post = postService.getAuthorArticleById(id);
+
+        if (memberContext.memberIsNot(post.getAuthor())) {
+            throw new ResponseStatusException(HttpStatus.FORBIDDEN);
+        }
+
+        postService.modifyPost(postForm, memberContext.getId(), id);
+
+        return "redirect:/";
     }
 
     @PreAuthorize("isAuthenticated()")

@@ -29,5 +29,12 @@ public class MemberContext extends User {
         this.password = member.getPassword();
     }
 
+    private boolean memberIs(Member member) {
+        return id.equals(member.getMemberId());
+    }
+
+    public boolean memberIsNot(Member member) {
+        return memberIs(member) == false;
+    }
 
 }

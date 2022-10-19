@@ -21,8 +21,10 @@ public interface PostService {
     public Post getPost(long id);
 
     // 글 수정 서비스
-    public void modifyPost(Post post, String content);
+    public void modifyPost(PostForm postForm, Long memberContextId, Long id);
 
     // 글 삭제 서비스
     public void deletePost(Post post);
+
+    public Post getAuthorArticleById(long id);
 }

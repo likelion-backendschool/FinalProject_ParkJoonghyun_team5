@@ -56,16 +56,31 @@ public class PostServiceImpl implements PostService{
     }
 
     @Override
-    public void modifyPost(Post post, String content){
-        post.setContent(content);
-        post.setUpdateDate(LocalDateTime.now());
-        postRepository.save(post);
+    public void modifyPost(PostForm postForm, Long memberContextId, Long id){
+        modify(new Member(memberContextId), postForm.getSubject(), postForm.getContent(), id);
     }
+
+    public void modify(Member author, String subject, String content, Long id){
+        Post post = getPost(id);
+        post.setUpdateDate(LocalDateTime.now());
+        post.setSubject(subject);
+        post.setContent(content);
+
+        postRepository.save(post);
+
+    }
+
 
     @Override
     public void deletePost(Post post){
         postRepository.delete(post);
     }
 
+    @Override
+    public Post getAuthorArticleById(long id) {
+        Post post = getPost(id);
+
+        return post;
+    }
 
 }

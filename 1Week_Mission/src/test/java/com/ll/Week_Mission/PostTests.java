@@ -83,7 +83,7 @@ public class PostTests {
     public void PostModifyTest(){
         String content = "안녕하세요~~~~~~~~";
         Post post = postService.getPost(1);
-        postService.modifyPost(post, content);
+//        postService.modifyPost(post, content);
 
 
         assertThat(postService.getPost(1).getContent()).isEqualTo("안녕하세요~~~~~~~~");
