@@ -20,7 +20,7 @@ public class MemberContext extends User {
 
     public MemberContext(Member member, Collection<? extends GrantedAuthority> authorities) {
         super(member.getUsername(), member.getPassword(), authorities);
-        this.id = member.getId();
+        this.id = member.getMemberId();
         this.createDate = member.getCreateDate();
         this.modifyDate = member.getUpdateDate();
         this.username = member.getUsername();

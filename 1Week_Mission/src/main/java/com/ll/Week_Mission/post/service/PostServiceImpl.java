@@ -1,6 +1,7 @@
 package com.ll.Week_Mission.post.service;
 
 import com.ll.Week_Mission.DataNotFoundException;
+import com.ll.Week_Mission.member.entity.Member;
 import com.ll.Week_Mission.post.entity.Post;
 import com.ll.Week_Mission.post.form.PostForm;
 import com.ll.Week_Mission.post.repository.PostRepository;
@@ -18,14 +19,22 @@ public class PostServiceImpl implements PostService{
     private final PostRepository postRepository;
 
     @Override
-    public void create(PostForm postForm){
-        Post post = new Post();
-        post.setSubject(postForm.getSubject());
-        post.setContent(postForm.getContent());
-        post.setCreateDate(LocalDateTime.now());
-        post.setUpdateDate(LocalDateTime.now());
-        post.setAuthorId(2l);
+    public void create(PostForm postForm, Long memberContextId){
+        create(new Member(memberContextId), postForm.getSubject(), postForm.getContent());
+    }
+
+    public void create(Member author, String subject, String content){
+        Post post = Post.builder()
+                .author(author)
+                .subject(subject)
+                .content(content)
+                .contentHtml(content)
+                .createDate(LocalDateTime.now())
+                .updateDate(LocalDateTime.now())
+                .build();
+
         postRepository.save(post);
+
     }
 
     @Override
