@@ -33,9 +33,10 @@ public class PostController {
 
 
     @GetMapping("/post/list")
-    public String listPost(){
+    public String listPost(Model model){
         List<Post> postList = postService.getList();
-        return "list";
+        model.addAttribute("postList",postList);
+        return "post/list";
     }
 
     @PreAuthorize("isAuthenticated()")
