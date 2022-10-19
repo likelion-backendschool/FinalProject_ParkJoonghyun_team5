@@ -31,7 +31,7 @@ public class MemberController {
     public String join(@Valid JoinForm joinForm){
         memberService.join(joinForm);
 
-        return joinForm.getNickname()+"님 가입이 완료되었습니다.";
+        return "redirect:/";
     }
 
     @GetMapping("/login")

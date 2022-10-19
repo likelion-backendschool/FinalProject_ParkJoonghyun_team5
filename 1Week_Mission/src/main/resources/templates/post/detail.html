@@ -11,11 +11,15 @@
         <h1>글 상세페이지</h1>
 
         <div>
-            작성 : [[${post.createDate}]]
+            글 번호 : [[${post.postId}]]
         </div>
 
         <div>
-            수정 : [[${post.modifyDate}]]
+            작성시간 : [[${post.createDate}]]
+        </div>
+
+        <div>
+            작성시간 : [[${post.updateDate}]]
         </div>
 
         <div>
@@ -30,21 +34,7 @@
             내용 : [[${post.content}]]
         </div>
 
-        <div>
-            해시태그 :
-            <th:block th:utext="${article.extra_hashTagLinks}"/>
-        </div>
 
-        <div th:each="entry : ${article.extra.genFileMap}">
-            <hr/>
-            <img th:src="@{${entry.value.url}}" alt="">
-        </div>
-
-        <div class="py-3">
-            <a th:href="@{|/article/list|}" class="btn btn-sm btn-secondary">목록</a>
-            <a th:href="@{|/article/${article.id}/modify|}" class="btn btn-sm btn-secondary">수정</a>
-            <a onclick="return confirm('정말로 삭제하시겠습니까?')" th:href="@{|/article/${article.id}/delete|}" class="btn btn-sm btn-secondary">삭제</a>
-        </div>
 
     </div>
 </section>
