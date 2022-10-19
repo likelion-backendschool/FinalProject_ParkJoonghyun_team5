@@ -5,20 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="679d3431-ee9e-4301-ae79-edf76f90fc35" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/Week_Mission/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/Week_Mission/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/Week_Mission/member/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/Week_Mission/member/controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/Week_Mission/member/entity/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/Week_Mission/member/entity/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/Week_Mission/post/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/Week_Mission/post/controller/PostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/Week_Mission/post/entity/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/Week_Mission/post/entity/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/Week_Mission/post/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/Week_Mission/post/service/PostService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/Week_Mission/post/service/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/Week_Mission/post/service/PostServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/test/java/com/ll/Week_Mission/MemberTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/test/java/com/ll/Week_Mission/MemberTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/test/java/com/ll/Week_Mission/PostTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/test/java/com/ll/Week_Mission/PostTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Record/1Week_박중현.md" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Record/1Week_박중현.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/Week_Mission/member/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/Week_Mission/member/service/MemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/Week_Mission/member/service/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/Week_Mission/member/service/MemberServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +52,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -79,6 +71,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -88,7 +81,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "/Users/joonghyun/Desktop/LikeLion/Final_Project",
+    "last_opened_file_path": "/Users/joonghyun/Desktop/LikeLion/Final_Project/1Week_Mission/src/main/resources/templates",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -99,80 +92,19 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ll.Week_Mission.member.repository" />
+      <recent name="com.ll.Week_Mission.member.service" />
       <recent name="com.ll.Week_Mission" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/1Week_Mission/src/main/resources/templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/1Week_Mission/src/main/resources/templates/member" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.PostTests.PostDeleteTest">
-    <configuration name="PostTests.PostDeleteTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/1Week_Mission" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.ll.Week_Mission.PostTests.PostDeleteTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="PostTests.PostModifyTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/1Week_Mission" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.ll.Week_Mission.PostTests.PostModifyTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="PostTests.member_get" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/1Week_Mission" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.ll.Week_Mission.PostTests.member_get&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="PostTests.PostDeleteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.Application">
+    <configuration name="MemberTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="1Week_Mission.test" />
       <extension name="coverage">
         <pattern>
@@ -181,8 +113,55 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ll.Week_Mission" />
-      <option name="MAIN_CLASS_NAME" value="com.ll.Week_Mission.PostTests" />
-      <option name="METHOD_NAME" value="PostDeleteTest" />
+      <option name="MAIN_CLASS_NAME" value="com.ll.Week_Mission.MemberTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MemberTests.memberControllerTestJoin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="1Week_Mission.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ll.Week_Mission.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ll.Week_Mission" />
+      <option name="MAIN_CLASS_NAME" value="com.ll.Week_Mission.MemberTests" />
+      <option name="METHOD_NAME" value="memberControllerTestJoin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MemberTests.memberControllerTestShowJoin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="1Week_Mission.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ll.Week_Mission.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ll.Week_Mission" />
+      <option name="MAIN_CLASS_NAME" value="com.ll.Week_Mission.MemberTests" />
+      <option name="METHOD_NAME" value="memberControllerTestShowJoin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MemberTests.memberServiceTestJoin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="1Week_Mission.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ll.Week_Mission.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ll.Week_Mission" />
+      <option name="MAIN_CLASS_NAME" value="com.ll.Week_Mission.MemberTests" />
+      <option name="METHOD_NAME" value="memberServiceTestJoin" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -215,20 +194,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.PostTests.PostDeleteTest" />
-      <item itemvalue="Gradle.PostTests.member_get" />
-      <item itemvalue="Gradle.PostTests.PostModifyTest" />
-      <item itemvalue="JUnit.PostTests.PostDeleteTest" />
+      <item itemvalue="JUnit.MemberTests" />
+      <item itemvalue="JUnit.MemberTests.memberControllerTestJoin" />
+      <item itemvalue="JUnit.MemberTests.memberControllerTestShowJoin" />
+      <item itemvalue="JUnit.MemberTests.memberServiceTestJoin" />
       <item itemvalue="JUnit.PostTests.postCreateTest" />
       <item itemvalue="Spring Boot.Application" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PostTests.PostDeleteTest" />
+        <item itemvalue="JUnit.MemberTests.memberServiceTestJoin" />
         <item itemvalue="JUnit.PostTests.postCreateTest" />
-        <item itemvalue="Gradle.PostTests.PostDeleteTest" />
-        <item itemvalue="Gradle.PostTests.PostModifyTest" />
-        <item itemvalue="Gradle.PostTests.member_get" />
+        <item itemvalue="JUnit.MemberTests" />
+        <item itemvalue="JUnit.MemberTests.memberControllerTestJoin" />
+        <item itemvalue="JUnit.MemberTests.memberControllerTestShowJoin" />
       </list>
     </recent_temporary>
   </component>
@@ -245,7 +224,8 @@
       <workItem from="1665980988997" duration="3000" />
       <workItem from="1665981007294" duration="13418000" />
       <workItem from="1666002736384" duration="12398000" />
-      <workItem from="1666069149132" duration="598000" />
+      <workItem from="1666069149132" duration="13328000" />
+      <workItem from="1666083771871" duration="1093000" />
     </task>
     <servers />
   </component>
