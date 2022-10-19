@@ -6,16 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="679d3431-ee9e-4301-ae79-edf76f90fc35" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/resources/static/resource/common/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/resources/static/resource/common/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/resources/templates/home/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/resources/templates/home/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/resources/templates/layout/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/resources/templates/layout/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/resources/templates/member/join.html" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/resources/templates/member/join.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/resources/templates/member/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/resources/templates/member/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/resources/templates/post/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/resources/templates/post/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/resources/templates/post/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/resources/templates/post/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/resources/templates/post/modify.html" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/resources/templates/post/modify.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/resources/templates/post/write.html" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/resources/templates/post/write.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1Week_Record/1Week_박중현.md" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Record/1Week_박중현.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -271,7 +262,7 @@
       <workItem from="1666002736384" duration="12398000" />
       <workItem from="1666069149132" duration="13328000" />
       <workItem from="1666083771871" duration="1093000" />
-      <workItem from="1666159163385" duration="7443000" />
+      <workItem from="1666159163385" duration="8592000" />
     </task>
     <servers />
   </component>
