@@ -6,16 +6,18 @@ import com.ll.Week_Mission.post.service.PostService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.validation.Valid;
 import java.time.LocalDateTime;
 import java.util.List;
 
-@RestController
+@Controller
 @RequiredArgsConstructor
 public class PostController {
 
@@ -23,7 +25,7 @@ public class PostController {
 
     @GetMapping("/")
     public String main(){
-        return "main";
+        return "home/main";
     }
 
 
@@ -33,16 +35,17 @@ public class PostController {
         return "list";
     }
 
+    @PreAuthorize("isAuthenticated()")
     @GetMapping("/post/write")
     public String getPostForm(){
-        return "getPostForm";
+        return "post/write";
     }
 
+    @PreAuthorize("isAuthenticated()")
     @PostMapping("/post/write")
-    public String writePost(){
-        PostForm postForm = new PostForm();
+    public String writePost(@Valid PostForm postForm){
         postService.create(postForm);
-        return "writePost";
+        return "redirect:/";
     }
 
     @GetMapping("/post/{id}")
@@ -51,16 +54,19 @@ public class PostController {
         return "detail";
     }
 
+    @PreAuthorize("isAuthenticated()")
     @GetMapping("/post/{id}/modify")
     public String modifyPostByGet(@PathVariable long id){
         return "modify";
     }
 
+    @PreAuthorize("isAuthenticated()")
     @PostMapping("/post/{id}/modify")
     public String modifyPostByPost(@PathVariable long id){
         return "modify";
     }
 
+    @PreAuthorize("isAuthenticated()")
     @GetMapping("/post/{id}/delete")
     public String deletePost(@PathVariable long id){
         return "delete";

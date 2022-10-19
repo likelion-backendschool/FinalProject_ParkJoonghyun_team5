@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="679d3431-ee9e-4301-ae79-edf76f90fc35" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/1Week_Mission/src/main/resources/static/resource/common/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1Week_Mission/src/main/resources/templates/home/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1Week_Mission/src/main/resources/templates/member/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1Week_Mission/src/main/resources/templates/post/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1Week_Mission/src/main/resources/templates/post/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1Week_Mission/src/main/resources/templates/post/modify.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1Week_Mission/src/main/resources/templates/post/write.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/Week_Mission/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/Week_Mission/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/Week_Mission/member/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/Week_Mission/member/controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/Week_Mission/member/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/Week_Mission/member/service/MemberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/Week_Mission/member/service/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/Week_Mission/member/service/MemberServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/Week_Mission/post/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/Week_Mission/post/controller/PostController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +86,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "/Users/joonghyun/Desktop/LikeLion/Final_Project/1Week_Mission/src/main/resources/templates",
+    "last_opened_file_path": "/Users/joonghyun/Desktop/LikeLion/Final_Project/1Week_Mission/src/main/resources/static",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -97,6 +102,7 @@
       <recent name="com.ll.Week_Mission" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/1Week_Mission/src/main/resources/static" />
       <recent name="$PROJECT_DIR$/1Week_Mission/src/main/resources/templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
