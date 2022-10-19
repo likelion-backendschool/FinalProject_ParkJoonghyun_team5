@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="679d3431-ee9e-4301-ae79-edf76f90fc35" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/Week_Mission/post/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/Week_Mission/post/controller/PostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/Week_Mission/post/repository/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/Week_Mission/post/repository/PostRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/Week_Mission/post/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/Week_Mission/post/service/PostService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/Week_Mission/post/service/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/Week_Mission/post/service/PostServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1Week_Record/1Week_박중현.md" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Record/1Week_박중현.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,9 +64,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Class" />
         <option value="Interface" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -267,7 +262,7 @@
       <workItem from="1666002736384" duration="12398000" />
       <workItem from="1666069149132" duration="13328000" />
       <workItem from="1666083771871" duration="1093000" />
-      <workItem from="1666159163385" duration="551000" />
+      <workItem from="1666159163385" duration="8592000" />
     </task>
     <servers />
   </component>

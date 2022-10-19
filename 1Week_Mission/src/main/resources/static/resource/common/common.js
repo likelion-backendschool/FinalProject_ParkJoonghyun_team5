@@ -19,3 +19,5 @@ toastr.options = {
 function successModal(msg) {
     toastr["success"](msg);
 }
+
+
