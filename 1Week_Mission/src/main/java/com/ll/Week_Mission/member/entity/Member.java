@@ -16,9 +16,9 @@ import java.util.List;
 public class Member {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long memberId;
 
-    @Column
+    @Column(unique = true)
     private String username;
 
     @Column
@@ -37,4 +37,7 @@ public class Member {
     private LocalDateTime updateDate;
 
 
+    public Member(Long memberId) {
+        this.memberId =memberId;
+    }
 }

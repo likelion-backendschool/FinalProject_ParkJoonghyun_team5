@@ -55,7 +55,7 @@ public class PostTests {
         postForm.setKeywords("restaurant");
         postForm.setSubject("hello");
 
-        postService.create(postForm);
+//        postService.create(postForm);
     }
 
     @DisplayName("글 리스트 확인")
@@ -69,7 +69,7 @@ public class PostTests {
     @Test
     public void PostGetTest() throws Exception{
         Post post = postService.getPost(1);
-        assertThat(post.getAuthorId()).isEqualTo(2);
+//        assertThat(post.getAuthorId()).isEqualTo(2);
     }
 
     @DisplayName("mockMvc를 활용하여 id에 해당하는 글 가져오기")
@@ -83,7 +83,7 @@ public class PostTests {
     public void PostModifyTest(){
         String content = "안녕하세요~~~~~~~~";
         Post post = postService.getPost(1);
-        postService.modifyPost(post, content);
+//        postService.modifyPost(post, content);
 
 
         assertThat(postService.getPost(1).getContent()).isEqualTo("안녕하세요~~~~~~~~");

@@ -1,5 +1,6 @@
 package com.ll.Week_Mission.post.entity;
 
+import com.ll.Week_Mission.member.entity.Member;
 import lombok.*;
 
 import javax.persistence.*;
@@ -14,7 +15,7 @@ import java.time.LocalDateTime;
 public class Post {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long postId;
 
     @Column
     private String subject;
@@ -31,7 +32,7 @@ public class Post {
     @Column
     private LocalDateTime updateDate;
 
-    @Column
-    private Long authorId;
+    @ManyToOne
+    private Member author;
 
 }

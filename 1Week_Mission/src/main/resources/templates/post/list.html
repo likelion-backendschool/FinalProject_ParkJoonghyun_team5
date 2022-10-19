@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html layout:decorate="~{layout/layout.html}">
+
+<head>
+    <title>게시물 리스트</title>
+</head>
+
+<body>
+<section layout:fragment="content">
+    <div class="container">
+        <h1>게시물 리스트</h1>
+
+        <th:block th:each="post : ${postList}">
+            <div>
+                [[${post.postId}]]
+            </div>
+            <div>
+                [[${post.subject}]]
+            </div>
+            <div>
+                [[${post.author.username}]]
+            </div>
+            <div>
+                [[${post.createDate}]]
+            </div>
+            <div>
+                [[${post.updateDate}]]
+            </div>
+        </th:block>
+    </div>
+
+</section>
+</body>
+</html>
