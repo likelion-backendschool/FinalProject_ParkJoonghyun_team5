@@ -70,12 +70,13 @@ public class PostServiceImpl implements PostService{
 
     }
 
-
+    // 삭제 서비스 코드
     @Override
     public void deletePost(Post post){
         postRepository.delete(post);
     }
 
+    // 해당 글의 작가가 쓴 글인지 확인하기 위한 서비스 코드
     @Override
     public Post getAuthorArticleById(long id) {
         Post post = getPost(id);

@@ -88,7 +88,15 @@ public class PostController {
 
     @PreAuthorize("isAuthenticated()")
     @GetMapping("/post/{id}/delete")
-    public String deletePost(@PathVariable long id){
-        return "delete";
+    public String deletePost(@AuthenticationPrincipal MemberContext memberContext, @PathVariable long id){
+        Post post = postService.getAuthorArticleById(id);
+
+        if(memberContext.memberIsNot(post.getAuthor())){
+            throw new ResponseStatusException(HttpStatus.FORBIDDEN);
+        }
+
+        postService.deletePost(post);
+
+        return "redirect:/";
     }
 }
