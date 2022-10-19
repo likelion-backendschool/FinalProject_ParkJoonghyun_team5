@@ -44,6 +44,12 @@ public class PostServiceImpl implements PostService{
     }
 
     @Override
+    public List<Post> getHundredList() {
+        List<Post> postList = postRepository.findHundred();
+        return postList;
+    }
+
+    @Override
     public Post getPost(long id){
         Optional<Post> post = postRepository.findById(id);
         if(post.isPresent()){

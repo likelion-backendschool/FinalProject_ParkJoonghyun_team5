@@ -25,7 +25,9 @@ public class PostController {
     private final PostService postService;
 
     @GetMapping("/")
-    public String main(){
+    public String main(Model model){
+        List<Post> postList = postService.getHundredList();
+        model.addAttribute("postList",postList);
         return "home/main";
     }
 

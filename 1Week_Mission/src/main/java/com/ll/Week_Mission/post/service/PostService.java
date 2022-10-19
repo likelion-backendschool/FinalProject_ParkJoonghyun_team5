@@ -27,4 +27,6 @@ public interface PostService {
     public void deletePost(Post post);
 
     public Post getAuthorArticleById(long id);
+
+    public List<Post> getHundredList();
 }
